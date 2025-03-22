@@ -10,3 +10,6 @@
 - @EqualsAndHashCode: Generates equals() and hashCode() methods.
 - @RequiredArgsConstructor: Generates a constructor for all final fields and fields that are marked with @NonNull.
 
+## Troubleshoot
+- list all processes running at port 8081: lsof -i tcp:8081
+- kill process: kill -9 pid
