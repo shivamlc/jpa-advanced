@@ -1,5 +1,6 @@
 package com.spring.boot.data.concepts.jpa_advanced.repository;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
@@ -40,7 +41,8 @@ public class CourseRepositoryTest {
 
        //assert
 
-     assertTrue(course.getName().equals("Spring boot jpa advanced concepts"));
+        //left side is expected val, right side is actual val
+       assertEquals("Spring boot jpa advanced concepts", course.getName());
 
     }
     
