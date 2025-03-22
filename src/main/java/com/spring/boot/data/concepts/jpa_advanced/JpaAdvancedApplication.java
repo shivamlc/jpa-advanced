@@ -26,6 +26,9 @@ public class JpaAdvancedApplication implements CommandLineRunner {
 
 		logger.info("Finding course by id 1000l: {}", 
 		courseRepository.findCourseById(1000l));
+
+		logger.info("Is deleting course by id 1000l, successful?: {}", 
+		courseRepository.deleteCourseById(1000l));
 	}
 
 }
